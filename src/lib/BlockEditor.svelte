@@ -1,11 +1,18 @@
 <script lang="ts">
-import FloatLabelInput from "./FloatLabelInput.svelte"
-import VerticalStack from "./layout/VerticalStack.svelte"
+import VerticalStack from "@/layout/VerticalStack.svelte"
+import Toolbar from "@/organisms/Toolbar.svelte"
+import TwoColumn from "@/layout/TwoColumn.svelte"
+import EditorPanel from "@/organisms/EditorPanel.svelte"
+import PreviewPanel from "@/organisms/PreviewPanel.svelte"
 </script>
 
 <div class="block-editor">
   <VerticalStack>
-    <FloatLabelInput id="test" label="test" />
+    <Toolbar />
+    <TwoColumn>
+      <EditorPanel />
+      <PreviewPanel />
+    </TwoColumn>
   </VerticalStack>
 </div>
 

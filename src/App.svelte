@@ -1,5 +1,5 @@
 <script lang="ts">
-import BlockEditor from "./lib/BlockEditor.svelte"
+import BlockEditor from "@/BlockEditor.svelte"
 </script>
 
 <BlockEditor />
