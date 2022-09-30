@@ -5,4 +5,8 @@ import HorizontalStack from "@/layout/HorizontalStack.svelte"
 
 <HorizontalStack>
   <AddButton />
+  <AddButton />
+  <AddButton />
+  <AddButton />
+  <AddButton />
 </HorizontalStack>
