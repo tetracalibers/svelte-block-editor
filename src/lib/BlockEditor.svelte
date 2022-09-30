@@ -1,9 +1,12 @@
 <script lang="ts">
-import FloatLabelInput from "@/lib/FloatLabelInput.svelte"
+import FloatLabelInput from "./FloatLabelInput.svelte"
+import VerticalStack from "./layout/VerticalStack.svelte"
 </script>
 
 <div class="block-editor">
-  <FloatLabelInput id="test" label="test" />
+  <VerticalStack>
+    <FloatLabelInput id="test" label="test" />
+  </VerticalStack>
 </div>
 
 <style>
@@ -17,5 +20,7 @@ import FloatLabelInput from "@/lib/FloatLabelInput.svelte"
   padding: 2rem;
   margin: 1rem;
   border-radius: 1rem;
+  box-sizing: border-box;
+  min-height: calc(100vh - 1rem * 2);
 }
 </style>
