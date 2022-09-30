@@ -7,7 +7,7 @@ import PreviewPanel from "@/organisms/PreviewPanel.svelte"
 </script>
 
 <div class="block-editor">
-  <VerticalStack>
+  <VerticalStack space="1.7rem">
     <Toolbar />
     <TwoColumn>
       <EditorPanel slot="left" />
