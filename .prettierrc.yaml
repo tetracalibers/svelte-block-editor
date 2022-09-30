@@ -7,8 +7,8 @@ trailingComma: all
 bracketSpacing: true
 jsxBracketSameLine: false
 arrowParens: avoid
-svelteSortOrder: options-styles-scripts-markup
+svelteSortOrder: options-scripts-markup-styles
 svelteStrictMode: true
-svelteBracketNewLine: false
+svelteBracketNewLine: true
 svelteAllowShorthand: false
 svelteIndentScriptAndStyle: false

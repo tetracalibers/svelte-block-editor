@@ -1,5 +1,13 @@
 <script lang="ts">
-import Header from "@/lib/Header.svelte"
+import BlockEditor from "./lib/BlockEditor.svelte"
 </script>
 
-<Header title="Svelte" />
+<BlockEditor />
+
+<style>
+:global(body) {
+  background-color: #4d608b;
+  width: 100%;
+  margin: 0;
+}
+</style>
