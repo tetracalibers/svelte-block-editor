@@ -1,5 +1,9 @@
 <script lang="ts">
+import IconButton from "@/a11y/IconButton.svelte"
+
 import { count } from "./store"
 </script>
 
-<button on:click="{() => ($count = Number($count) + 1)}"> + </button>
+<IconButton clickFn="{() => ($count = Number($count) + 1)}" label="increment">
+  +
+</IconButton>

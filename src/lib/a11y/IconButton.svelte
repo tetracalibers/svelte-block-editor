@@ -3,9 +3,10 @@ import VisuallyHidden from "./VisuallyHidden.svelte"
 
 export let label: string
 export let type: "reset" | "button" | "submit" = "button"
+export let clickFn = () => {}
 </script>
 
-<button type="{type}" {...$$restProps}>
+<button type="{type}" {...$$restProps} on:click="{clickFn}">
   <slot />
   <VisuallyHidden>{label}</VisuallyHidden>
 </button>
