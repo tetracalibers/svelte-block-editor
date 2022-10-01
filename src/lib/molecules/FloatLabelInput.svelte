@@ -1,16 +1,21 @@
 <script lang="ts">
 import VisuallyHidden from "@/a11y/VisuallyHidden.svelte"
 
+type IType = "text" | "number" | "email" | "url" | "password"
+type IValue<T extends IType> = T extends "number" ? number : string
+
 export let id: string
 export let label: string
+export let type: IType = "text"
+export let value: IValue<typeof type> = type === "number" ? 0 : ""
 </script>
 
 <div class="floating">
   <input
     id="{id}"
     placeholder="{label}"
-    type="{$$restProps.type ?? 'text'}"
     class="floating__input"
+    bind:value
     {...$$restProps}
   />
   <label for="{id}" data-label="{label}" class="floating__label">

@@ -2,4 +2,4 @@
 import { count } from "./store"
 </script>
 
-<button on:click="{() => ($count -= 1)}"> - </button>
+<button on:click="{() => ($count = Number($count) - 1)}"> - </button>
