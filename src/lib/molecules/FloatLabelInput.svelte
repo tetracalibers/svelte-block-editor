@@ -36,7 +36,6 @@ border-radius = 10px
   border-radius: border-radius
   box-sizing: border-box
   outline: none
-  width: 100%
   font-size: 16px
   line-height: 1
   
@@ -51,16 +50,19 @@ border-radius = 10px
     box-sizing: border-box
     outline: none
     padding: 1.8rem 1rem 0.6rem
+    font-size: 16px
     caret-color: txt-color
     &::placeholder 
       /* 表示状態を検知するために透明にして残しておく */
       color: rgba(255, 255, 255, 0)
       
   &__label 
-    display: block
+    display: flex
+    justify-content: center
     position: relative
     max-height: 0
     pointer-events: none
+    width: 100%;
     &::before 
       color: txt-color
       content: attr(data-label)
@@ -69,7 +71,6 @@ border-radius = 10px
       backface-visibility: hidden
       transform-origin: left top
       transition: transform 0.2s ease
-      left: 1rem
       position: relative
       
   &__input:placeholder-shown + &__label::before
