@@ -1,8 +1,9 @@
 <script lang="ts">
 import BlockEditor from "@/BlockEditor.svelte"
+import Stepper from "@/Stepper/index.svelte"
 </script>
 
-<BlockEditor />
+<Stepper />
 
 <style>
 :global(body) {
